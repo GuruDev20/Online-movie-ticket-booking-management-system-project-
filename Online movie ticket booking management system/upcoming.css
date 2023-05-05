@@ -1,0 +1,90 @@
+body{
+    font-family: "Lato", sans-serif;
+    background-color: whitesmoke;
+    margin:0;
+    background-image: linear-gradient(to right, #e9ebf0, #d7ebf9, #bdeefa, #a6f0ed, #a2f0d1);
+}
+.header {
+    padding: 10px;
+    text-align: center;
+    color: rgb(73, 71, 71);;
+    font-size: 20px;
+}
+.sidebar{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(73, 137, 146);
+    overflow-x: hidden;
+    transition: 0.6s;
+    padding-top: 60px;
+}
+.sidebar a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    transition: 0.3s;
+    color: white ;
+}
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+}
+.openbtn{
+    font-size: 20px;
+    cursor: pointer;
+    background: rgb(73, 71, 71);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+.openbtn:hover{
+    background-color: #1f1e1e;
+}
+#main{
+    transition: margin-left 2.0s;
+    margin-top: 5px;
+    padding: 13px;
+    text-align: left;
+    background: rgb(73, 71, 71);
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-height: 450px){
+    .sidebar{padding-top: 15px;}
+    .sidebar a{font-size: 18px;}
+}
+.open{
+    text-align: right;
+}
+.open a:link, a:visited{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}  
+.open a:hover, a:active{
+    background-color: black;
+}
+.sidebar img{
+    max-width: 50%;
+    padding-bottom: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.footer{
+    padding: 10px;
+    text-align: center;
+    color: rgb(73, 71, 71);;
+    font-size: 20px;
+}
